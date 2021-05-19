@@ -10,49 +10,125 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.topBarMenu{
+/* Header part */
+
+.header{
     width: 100vw;
-    background-color: aliceblue;
-
-    display: flex;
-    justify-content: center;
-}
-
-.topBarMenu-inside{
-
-    width: 80%;
     height: 8vh;
+    background-color: white;
 
     display: flex;
-    flex-direction: row;
-
     align-items: center;
     justify-content: space-between;
 }
 
-.topBarMenu-socialImages{
-    font-size: 2rem;
+.header-leftPart{
+    margin-left: 15vw;
+}
+
+.header-leftPart img{
+    height: 5vh;
+}
+
+.header-rightPart{
+    margin-right: 15vw;
+
+    display: flex;
+}
+
+.header-rightPart-icons{
+    font-size: 4vh;
     display: flex;
 
     align-items: center;
-    justify-content: left;
-    width: 40vw;
 }
 
-.topBarMenu-socialImages-links{
-    margin-left: 5vw;
-    width: 20vw;
+.header-rightPart-icons i{
+    padding: 0.4rem;
 }
 
-.topBarMenu-socialImages-links a{
+.header-rightPart-links{
+    margin-left: 10vw;
+    display: flex;
+
+    align-items: center;
+}
+
+.header-rightPart-links a{
     color: black;
     text-decoration: none;
-    font-size: 1.3rem;
-    background-color: blanchedalmond;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+}
+
+.header-rightPart-links-active{
+    color: white !important;
+    background-color: #9C0412;
 }
 
 
-.topBarMenu img{
-    height: 5vh;
+/* Main Article Part */
+
+.mainArticle{
+    background-image: url("./images/featured.jpg");
+    background-position: center;
+    width: 100vw;
+    height: 60vh;
+}
+
+.mainArticle-background{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(128, 128, 128, 0.322);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainArticle-content{
+    height: 30%;
+    width: 60%;
+    color: white;
+
+    display: flex;
+    justify-content: left;
+}
+
+.mainArticle-content h2{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.mainArticle-content-spacer{
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tag{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    background-color: #F8874F;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+
+    width: fit-content;
+}
+
+
+.niceLinkButton{
+    color: white;
+    text-decoration: none;
+    background-color: #9C0412;
+    width: fit-content;
+    padding: 0.5rem;
+
+    margin-top: 0.5rem;
 }
