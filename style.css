@@ -132,3 +132,111 @@ body{
 
     margin-top: 0.5rem;
 }
+
+
+/* small articles */
+
+.smallArticlesContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.smallArticlesContainer-inside{
+    width: 70%;
+    display: grid;
+
+    grid-template-areas: 
+    'h2 h2 h2'
+    'news1 news1 news2'
+    'news3 news4 news5'
+    'news3 news4 news5'
+    'news6 news7 news7';
+
+    grid-gap: 1rem;
+}
+
+.smallArticlesContainer-inside > h2{
+    grid-area: h2;
+
+    margin-top: 3rem;
+}
+
+.news{
+    background-color: white;
+    padding: 1rem;
+}
+
+.news h2{
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.news img{
+    height: 25vh;
+}
+
+.news1{
+    grid-area: news1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.news2{
+    grid-area: news2;
+}
+.news3{
+    grid-area: news3;
+}
+.news4{
+    grid-area: news4;
+
+    display: grid;
+    grid-template-areas:
+    'second'
+    'first';
+}
+
+.news4-first{
+    grid-area: first;
+}
+.news4-second{
+    grid-area: second;
+}
+
+.news5{
+    grid-area: news5;
+}
+.news6{
+    grid-area: news6;
+}
+.news7{
+    grid-area: news7;
+
+    display: grid;
+    grid-template-areas: 
+    'second first'
+}
+
+.news7-first{
+    grid-area: first;
+}
+.news7-second{
+    grid-area: second;
+}
+
+
+.tag-tech{
+    background-color: #428BCA;
+}
+
+.tag-entertainment{
+    background-color: #800080;
+}
+
+.news:nth-child(3){
+    background-color: #302D2D;
+    color: white;
+}
