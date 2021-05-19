@@ -240,3 +240,8 @@ body{
     background-color: #302D2D;
     color: white;
 }
+
+.news-second{
+    margin: 1rem;
+    margin-left: 0;
+}
