@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    --redColor: #AE0A09;
+    --darkColor: #2F2F2F;
+    --lightColor: #D3D3D3;
+    --extraLightColor: #F6F6F6;
+    --width: 70%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 *{
     margin: 0;
@@ -6,53 +14,58 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+a{
+    text-decoration: none;
+    color: var(--darkColor);
+    font-weight: bold;
+    padding: .75rem;
 }
 
-.topBarMenu{
-    width: 100vw;
-    background-color: aliceblue;
+i{
+    color: var(--darkColor);
+    font-size: 2rem;
+}
 
-    display: flex;
+img{
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.container{
+    width: 100vw;
     justify-content: center;
 }
 
-.topBarMenu-inside{
-
-    width: 80%;
-    height: 8vh;
-
-    display: flex;
-    flex-direction: row;
-
+.navigationBar{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    padding: 0 10%;
     align-items: center;
-    justify-content: space-between;
 }
 
-.topBarMenu-socialImages{
-    font-size: 2rem;
-    display: flex;
-
-    align-items: center;
-    justify-content: left;
-    width: 40vw;
+.navigationBar-logo{
+    justify-self: center;
 }
 
-.topBarMenu-socialImages-links{
-    margin-left: 5vw;
-    width: 20vw;
-}
-
-.topBarMenu-socialImages-links a{
-    color: black;
-    text-decoration: none;
-    font-size: 1.3rem;
-    background-color: blanchedalmond;
-    padding: 0.5rem 1rem;
+.navigationBar-logo img{
+    width: 50%;
 }
 
 
-.topBarMenu img{
-    height: 5vh;
+.navigationBar-socials{
+    justify-self: right;
+}
+
+.navigationBar-links{
+    justify-self: right;
+}
+
+.navigationBar-currentLink{
+    background-color: var(--redColor);
+    color: white;
+}
+
+.navigationBar a:hover{
+    color: var(--darkColor);
+    background-color: var(--lightColor);
 }
