@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.header-leftPart{
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.header-rightPart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.header-rightPart-links{
+    margin: 0;
+}
+
+.header-rightPart-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.header-rightPart-icons i{
+    font-size: 2rem;
+}
+
+/* Main article */
+
+.mainArticle-content{
+    min-width: 90%;
+    justify-content: center;
+}
+
+.mainArticle-content-spacer{
+    min-width: 80%;
+}
+
+
+/* Small articles */
+
+.smallArticlesContainer-inside{
+    grid-template-areas: none;
+    grid-template-areas: 
+    'h2'
+    'news1'
+    'news2'
+    'news3'
+    'news4'
+    'news5'
+    'news6'
+    'news7'
+    ;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer-element{
+    margin: 2rem 0;
+}
